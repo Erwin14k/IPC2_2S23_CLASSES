@@ -62,6 +62,29 @@ class lista_doble:
                 return
             actual=actual.siguiente
         print("Error, estudiante no encontrado :(")
+    
+
+    def insertar_ordenado(self, estudiante):
+        nuevo_nodo = nodo(estudiante=estudiante)
+        if self.primero is None:
+        # Si la lista está vacía, simplemente se inserta el nuevo estudiante como el primero
+            self.primero = nuevo_nodo
+            return
+        # Comparar el creditos_aprobados del nuevo estudiante con el primero de la lista
+        if estudiante.creditos_aprobados < self.primero.estudiante.creditos_aprobados:
+            nuevo_nodo.siguiente = self.primero
+            self.primero.anterior = nuevo_nodo
+            self.primero = nuevo_nodo
+            return
+        actual = self.primero
+        while actual.siguiente and actual.siguiente.estudiante.creditos_aprobados < estudiante.creditos_aprobados:
+            actual = actual.siguiente
+        # Insertar el nuevo estudiante después del nodo "actual"
+        nuevo_nodo.siguiente = actual.siguiente
+        if actual.siguiente:
+            actual.siguiente.anterior = nuevo_nodo
+        actual.siguiente = nuevo_nodo
+        nuevo_nodo.anterior = actual
         
         
 
