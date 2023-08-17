@@ -1,0 +1,21 @@
+'''
+Lista_carceles (Carcel)
+
+
+Carcel:
+- nombre
+- niveles
+- celdas_por nivel
+- lista_de_celdas  (Celdas)
+    -insertar
+    -recorrer
+- lista_de_patrones (Celdas)
+    -insertar
+    -recorrer
+
+
+Celda:
+- nivel
+- numero_de_celda
+- prisionero
+'''

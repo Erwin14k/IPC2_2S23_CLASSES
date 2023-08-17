@@ -1,0 +1,33 @@
+
+            digraph G {"niveles=5","CeldasNivel=4"->" Carcel De Seguridad" bgcolor="#3990C4" style="filled"
+            subgraph cluster1 {fillcolor="blue:red" style="filled"
+            node [shape=circle fillcolor="gold:brown" style="radial" gradientangle=180]
+            a0 [ label=<
+            <TABLE border="10" cellspacing="10" cellpadding="10" style="rounded" bgcolor="blue:red" gradientangle="315">
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">0</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">0</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">0</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">0</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">0</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">1</TD>
+ </TR></TABLE>>];
+                }
+                }
