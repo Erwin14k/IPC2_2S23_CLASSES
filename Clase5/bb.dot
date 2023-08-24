@@ -1,0 +1,33 @@
+
+        digraph G {"t=5","A=4"->" Carcel De Seguridad" bgcolor="#3990C4" style="filled"
+        subgraph cluster1 {fillcolor="blue:red" style="filled"
+        node [shape=circle fillcolor="gold:brown" style="radial" gradientangle=180]
+        a0 [ label=<
+        <TABLE border="10" cellspacing="10" cellpadding="10" style="rounded" bgcolor="blue:red" gradientangle="315">
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">Michael Johnson</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Sarah Martinez</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">David Thompson</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">NULL</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">Robert Davis</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Emily Williams</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">James Jackson</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">NULL</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">William Anderson</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Sophia White</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">NULL</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Ava Carter</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">Daniel Harris</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Mia Lewis</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Matthew Scott</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Grace Martin</TD>
+</TR>
+<TR><TD border="3"  bgcolor="yellow" gradientangle="315">NULL</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Isabella Green</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">NULL</TD>
+<TD border="3"  bgcolor="yellow" gradientangle="315">Lily Hall</TD>
+ </TR></TABLE>>];
+            }
+            }
