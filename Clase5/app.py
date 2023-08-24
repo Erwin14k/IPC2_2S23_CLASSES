@@ -33,16 +33,17 @@ for carcel_temporal in root.findall('carcel'):
         numero_celda = celda_carcel.get('numeroCelda')
         prisionero_celda = celda_carcel.text
         nuevo=celda(int(nivel_celda),int(numero_celda),prisionero_celda)
-        lista_celdas_temporal.insertar_dato(nuevo)
+        lista_celdas_temporal.insertar_dato_ordenado(nuevo)
         # Inserción en mi lista de patrones celda:
         if prisionero_celda!="NULL":
             nuevo=celda(int(nivel_celda),int(numero_celda),1)
-            lista_celdas_patrones_temporal.insertar_dato(nuevo)
+            lista_celdas_patrones_temporal.insertar_dato_ordenado(nuevo)
         else:
             nuevo=celda(int(nivel_celda),int(numero_celda),0)
-            lista_celdas_patrones_temporal.insertar_dato(nuevo)
+            lista_celdas_patrones_temporal.insertar_dato_ordenado(nuevo)
     lista_carceles_temporal.insertar_dato(carcel(nombre_carcel,niveles_carcel,celdas_por_nivel,lista_celdas_temporal,lista_celdas_patrones_temporal,lista_patrones_temporal,lista_grupos_temporal))
 # calculamos los patrones de esta carcel "Carcel De Seguridad"
+lista_carceles_temporal.recorrer_e_imprimir_lista()
 lista_carceles_temporal.calcular_los_patrones("Carcel De Seguridad")
 
 

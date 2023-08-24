@@ -18,6 +18,25 @@ class lista_celdas:
     actual.siguiente = nodo_celda(celda=celda)
     self.contador_celdas+=1
 
+  def insertar_dato_ordenado(self, celda):
+        nueva_celda = nodo_celda(celda=celda)
+        self.contador_celdas += 1
+        if self.primero is None:
+            self.primero = nueva_celda
+            return
+        if celda.nivel < self.primero.celda.nivel or (
+                celda.nivel == self.primero.celda.nivel and celda.numero_celda <= self.primero.celda.numero_celda):
+            nueva_celda.siguiente = self.primero
+            self.primero = nueva_celda
+            return
+        actual = self.primero
+        while actual.siguiente is not None and (
+                celda.nivel > actual.siguiente.celda.nivel or (
+                        celda.nivel == actual.siguiente.celda.nivel and celda.numero_celda > actual.siguiente.celda.numero_celda)):
+            actual = actual.siguiente
+        nueva_celda.siguiente = actual.siguiente
+        actual.siguiente = nueva_celda
+
   def recorrer_e_imprimir_lista(self):
     print("===========================================================================================")
     actual = self.primero
