@@ -21,14 +21,17 @@ class lista_celdas:
   def insertar_dato_ordenado(self, celda):
         nueva_celda = nodo_celda(celda=celda)
         self.contador_celdas += 1
+        # Si la lista está vacía solo añade el nuevo nodo
         if self.primero is None:
             self.primero = nueva_celda
             return
+        # Caso especial: la nueva celda debe ser el nuevo primer nodo, debe reemplazar al primero
         if celda.nivel < self.primero.celda.nivel or (
                 celda.nivel == self.primero.celda.nivel and celda.numero_celda <= self.primero.celda.numero_celda):
             nueva_celda.siguiente = self.primero
             self.primero = nueva_celda
             return
+        # Si no cumple con ninguno de los casos, recorrer hasta encontrar su posición
         actual = self.primero
         while actual.siguiente is not None and (
                 celda.nivel > actual.siguiente.celda.nivel or (
