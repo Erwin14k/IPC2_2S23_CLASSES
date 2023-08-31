@@ -1,0 +1,24 @@
+digraph G {
+ node [shape=plaintext];
+label="Tablero facilito";
+some_node [
+label=<
+<table border="0" cellborder="0" cellspacing="0" width="100%" height="100%">
+<tr>
+<td bgcolor="Orange" width="1" height="1">1,1</td>
+<td bgcolor="Red" width="1" height="1">1,2</td>
+<td bgcolor="Red" width="1" height="1">1,3</td>
+</tr>
+<tr>
+<td bgcolor="Blue" width="1" height="1">2,1</td>
+<td bgcolor="Blue" width="1" height="1">2,2</td>
+<td bgcolor="Blue" width="1" height="1">2,3</td>
+</tr>
+<tr>
+<td bgcolor="White" width="1" height="1">3,1</td>
+<td bgcolor="White" width="1" height="1">3,2</td>
+<td bgcolor="White" width="1" height="1">3,3</td>
+</tr>
+</table>>
+];
+}
