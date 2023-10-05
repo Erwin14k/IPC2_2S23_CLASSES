@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mi CV</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+  </head>
+  <body>
+    <header>
+      <img src="{{ url_for('static',filename='kratos.jpg')}}" width="150" height="150">
+      <h1>Erwin Vásquez</h1>
+      <p>Desarrollador de software</p>
+    </header>
+
+    <section>
+      <h2>Información de contacto</h2>
+      <ul>
+        <li>aaaaa@gmail.com</li>
+        <li>3249389</li>
+        <li>www.ipc2.com</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Resumen profesional</h2>
+      <p>Soy el auxiliar de IPC2</p>
+    </section>
+    <section>
+      <h2>Experiencia Laboral</h2>
+      <h3>Desarrollador de software (1900-2000)</h3>
+      <p>Trabajé en el equipo de desarrollo</p>
+      <h3>Desarrollador Frontend (1900-2000)</h3>
+      <p>Trabajé en el equipo de desarrollo frontend</p>
+    </section>
+    <section>
+      <h2>Educación</h2>
+      <h3>Ingeniería en ciencias y sistemas USAC</h3>
+      <p>Estoy en el 8vo semestre de la carrera</p>
+    </section>
+    <section>
+      <h2>Tabla de habilidades</h2>
+      <table>
+        <th>Habilidad</th>
+        <th>Descripción</th>
+        <tr>
+          <td>
+            Backend
+          </td>
+          <td>Estoy aprendiendo backend</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
