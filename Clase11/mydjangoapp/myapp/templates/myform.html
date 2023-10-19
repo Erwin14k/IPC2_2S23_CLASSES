@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario en Django</title>
+</head>
+<body>
+    <h1>Formulario en Django</h1>
+    <form method="POST" id="myForm" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" id="fileInput" name="file" accept=".jpg, .png, .jpeg" />
+        <button type="button" id="submitButton">Enviar a Flask</button>
+    </form>
+
+    <div id="response">
+        <textarea id="responseText" rows="10" cols="50"></textarea>
+        <button type="button" id="getResponseButton">Obtener Respuesta de Flask</button>
+    </div>
+
+    <div id="response2">
+        <textarea id="responseText2" rows="10" cols="50"></textarea>
+        <button type="button" id="getResponseButton2">Obtener Respuesta de Flask 2</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#submitButton").click(function(e) {
+                e.preventDefault();
+                var form = new FormData();
+                form.append('data', $("#inputData").val());
+                form.append('file', $("#fileInput")[0].files[0]);
+                var csrfToken = $("input[name='csrfmiddlewaretoken']").val();
+                form.append('csrfmiddlewaretoken', csrfToken);
+
+                $.ajax({
+                    type: "POST",
+                    url: "",
+                    data: form,
+                    processData: false,
+                    contentType: false,
+                    success: function(response) {
+                        $("#response").html(response.message);
+                    },
+                    error: function(xhr, status, error) {
+                        $("#response").html("Error: " + error);
+                    }
+                });
+            });
+
+            $("#getResponseButton").click(function() {
+                $.get("/myapp/get_response", function(response) {
+                    $("#responseText").val(response.message[0].userId+"---"+response.message[0].name);
+                });
+            });
+
+            $("#getResponseButton2").click(function() {
+                $.get("/myapp/get_response2", function(response) {
+                    $("#responseText2").val(response.message);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
