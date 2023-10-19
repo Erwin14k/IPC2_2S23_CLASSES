@@ -22,16 +22,7 @@ def upload_file():
 
 @app.route('/flask_response',methods=['GET'])
 def get_response_from_flask():
-  response_data={"message":[
-    {
-      "userId":"1",
-      "name":"El aux"
-    },
-    {
-      "userId":"2",
-      "name":"El aux2 "
-    },
-  ]}
+  response_data={"message":"Mañana es feriado"}
   return jsonify(response_data)
 
 

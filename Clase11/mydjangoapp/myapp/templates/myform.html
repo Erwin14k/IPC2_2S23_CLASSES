@@ -47,9 +47,14 @@
                 });
             });
 
-            $("#getResponseButton").click(function() {
+            /*$("#getResponseButton").click(function() {
                 $.get("/myapp/get_response", function(response) {
                     $("#responseText").val(response.message[0].userId+"---"+response.message[0].name);
+                });
+            });*/
+            $("#getResponseButton").click(function() {
+                $.get("/myapp/get_response", function(response) {
+                    $("#responseText").val(response.message);
                 });
             });
 
