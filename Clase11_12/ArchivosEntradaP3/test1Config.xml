@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<diccionario>
+  <sentimientos_positivos>
+    <palabra> emocionado </palabra>
+    <palabra> excelente </palabra>
+    <palabra> genial </palabra>
+    <palabra> alegre </palabra>
+  </sentimientos_positivos>
+  <sentimientos_negativos>
+    <palabra> mal </palabra>
+    <palabra> triste </palabra>
+    <palabra> molesto </palabra>
+    <palabra> decepcionado </palabra>
+    <palabra> enojo </palabra>
+  </sentimientos_negativos>
+</diccionario>
+
+
+
