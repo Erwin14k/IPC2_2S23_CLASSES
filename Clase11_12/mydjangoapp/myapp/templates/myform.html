@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,6 +21,9 @@
         <textarea id="responseText2" rows="10" cols="50"></textarea>
         <button type="button" id="getResponseButton2">Obtener Respuesta de Flask 2</button>
     </div>
+
+    <button type="button" id="mostrarImagenButton">Mostrar imagen Update</button>
+    <img src="{% static '11.jpg' %}" id="imagenMostrada" width="600" height="300">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -63,6 +67,12 @@
                     $("#responseText2").val(response.message);
                 });
             });
+
+            $(document).ready(function(){
+                $("#mostrarImagenButton").click(function(){
+                    $("#imagenMostrada").toggle();
+                })
+            })
         });
     </script>
 </body>
